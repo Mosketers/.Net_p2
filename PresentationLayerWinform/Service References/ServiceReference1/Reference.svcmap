@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0e8ba376-6fd3-4c2a-9a29-739412151028" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8834/tsi1/ServiceModelSamples/Service/?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="100aa2ef-1478-4843-8954-12316caca76d" SourceId="1" SourceUrl="http://localhost:8834/tsi1/ServiceModelSamples/Service/?xsd=xsd2" />
+    <MetadataFile FileName="ServiceEmployees.wsdl" MetadataType="Wsdl" ID="0980e2e7-bbe5-414d-8363-59c772603a7b" SourceId="1" SourceUrl="http://localhost:8834/tsi1/ServiceModelSamples/Service/?wsdl" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="d0341f3f-e0e3-42a1-8f9d-75ee7f2c349e" SourceId="1" SourceUrl="http://localhost:8834/tsi1/ServiceModelSamples/Service/?xsd=xsd0" />
+    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="ca058948-6847-4f70-ba81-5095f9205ef9" SourceId="1" SourceUrl="http://localhost:8834/tsi1/ServiceModelSamples/Service/?xsd=xsd1" />
+    <MetadataFile FileName="item.wsdl" MetadataType="Wsdl" ID="1438aba0-590e-4c69-a884-a84c68f85d63" SourceId="1" SourceUrl="http://localhost:8834/tsi1/ServiceModelSamples/Service/?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
