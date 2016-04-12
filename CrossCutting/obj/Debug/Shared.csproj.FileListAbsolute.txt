@@ -11,3 +11,7 @@ C:\Users\Admin\Desktop\Mosketers\.Net_p1\CrossCutting\bin\Debug\Shared.dll
 C:\Users\Admin\Desktop\Mosketers\.Net_p1\CrossCutting\bin\Debug\Shared.pdb
 C:\Users\Admin\Desktop\Mosketers\.Net_p1\CrossCutting\obj\Debug\Shared.dll
 C:\Users\Admin\Desktop\Mosketers\.Net_p1\CrossCutting\obj\Debug\Shared.pdb
+D:\Workspace\.Net_p2\CrossCutting\bin\Debug\Shared.dll
+D:\Workspace\.Net_p2\CrossCutting\bin\Debug\Shared.pdb
+D:\Workspace\.Net_p2\CrossCutting\obj\Debug\Shared.dll
+D:\Workspace\.Net_p2\CrossCutting\obj\Debug\Shared.pdb

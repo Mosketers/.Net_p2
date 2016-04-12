@@ -1,1 +1,2 @@
 C:\Users\Admin\Desktop\Mosketers\.Net_p1\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+D:\Workspace\.Net_p2\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache

@@ -1,0 +1,16 @@
+D:\Workspace\.Net_p2\BusinessLogicLayer\bin\Release\BusinessLogicLayer.dll
+D:\Workspace\.Net_p2\BusinessLogicLayer\bin\Release\BusinessLogicLayer.pdb
+D:\Workspace\.Net_p2\BusinessLogicLayer\bin\Release\DataAccessLayer.dll
+D:\Workspace\.Net_p2\BusinessLogicLayer\bin\Release\Shared.dll
+D:\Workspace\.Net_p2\BusinessLogicLayer\bin\Release\MongoDB.Driver.dll
+D:\Workspace\.Net_p2\BusinessLogicLayer\bin\Release\MongoDB.Bson.dll
+D:\Workspace\.Net_p2\BusinessLogicLayer\bin\Release\EntityFramework.dll
+D:\Workspace\.Net_p2\BusinessLogicLayer\bin\Release\MongoDB.Driver.Core.dll
+D:\Workspace\.Net_p2\BusinessLogicLayer\bin\Release\Shared.pdb
+D:\Workspace\.Net_p2\BusinessLogicLayer\bin\Release\DataAccessLayer.pdb
+D:\Workspace\.Net_p2\BusinessLogicLayer\bin\Release\MongoDB.Driver.xml
+D:\Workspace\.Net_p2\BusinessLogicLayer\bin\Release\MongoDB.Bson.xml
+D:\Workspace\.Net_p2\BusinessLogicLayer\bin\Release\EntityFramework.xml
+D:\Workspace\.Net_p2\BusinessLogicLayer\obj\Release\BusinessLogicLayer.csprojResolveAssemblyReference.cache
+D:\Workspace\.Net_p2\BusinessLogicLayer\obj\Release\BusinessLogicLayer.dll
+D:\Workspace\.Net_p2\BusinessLogicLayer\obj\Release\BusinessLogicLayer.pdb

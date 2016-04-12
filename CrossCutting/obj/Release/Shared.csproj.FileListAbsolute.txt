@@ -1,0 +1,4 @@
+D:\Workspace\.Net_p2\CrossCutting\bin\Release\Shared.dll
+D:\Workspace\.Net_p2\CrossCutting\bin\Release\Shared.pdb
+D:\Workspace\.Net_p2\CrossCutting\obj\Release\Shared.dll
+D:\Workspace\.Net_p2\CrossCutting\obj\Release\Shared.pdb
