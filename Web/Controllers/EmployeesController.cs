@@ -13,10 +13,16 @@ namespace Web.Controllers
         {
             return View();
         }
-        // GET: Employees/list
+        // GET: Employees/List
         public ActionResult List()
         {
             var dl = WebApiConfig.blHandler.GetAllEmployees();
+            return View(dl);
+        }
+        // GET: Employees/Delete
+        public ActionResult Delete(int id)
+        {
+            var dl = WebApiConfig.blHandler.GetEmployee(id);
             return View(dl);
         }
     }
