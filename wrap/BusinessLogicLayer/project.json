@@ -1,0 +1,16 @@
+{
+  "version": "1.0.0-*",
+  "frameworks": {
+    "net45": {
+      "wrappedProject": "../../BusinessLogicLayer/BusinessLogicLayer.csproj",
+      "bin": {
+        "assembly": "../../BusinessLogicLayer/obj/{configuration}/BusinessLogicLayer.dll",
+        "pdb": "../../BusinessLogicLayer/obj/{configuration}/BusinessLogicLayer.pdb"
+      },
+      "dependencies": {
+        "Shared": "1.0.0-*",
+        "DataAccessLayer": "1.0.0-*"
+      }
+    }
+  }
+}

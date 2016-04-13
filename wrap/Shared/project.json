@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0-*",
+  "frameworks": {
+    "net45": {
+      "wrappedProject": "../../CrossCutting/Shared.csproj",
+      "bin": {
+        "assembly": "../../CrossCutting/obj/{configuration}/Shared.dll",
+        "pdb": "../../CrossCutting/obj/{configuration}/Shared.pdb"
+      }
+    }
+  }
+}

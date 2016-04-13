@@ -1,0 +1,1 @@
+D:\Workspace\.Net_p2\artifacts\obj\WebApplication\Release\WebApplication.xprojResolveAssemblyReference.cache
