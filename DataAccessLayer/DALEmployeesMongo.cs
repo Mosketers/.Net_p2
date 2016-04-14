@@ -20,7 +20,7 @@ namespace DataAccessLayer
 
         public DALEmployeesMongo()
         {
-BsonClassMap.RegisterClassMap<Employee>(cm =>
+            BsonClassMap.RegisterClassMap<Employee>(cm =>
             {
                 cm.AutoMap();
                 cm.SetIgnoreExtraElements(true);
@@ -52,7 +52,7 @@ BsonClassMap.RegisterClassMap<Employee>(cm =>
         public void DeleteEmployee(int id)
         {
             var filter = Builders<Employee>.Filter.Eq("IdEmployee", id);
-            this.collection.DeleteOneAsync(filter);
+            this.collection.DeleteOneAsync(filter).Wait();
         }
 
         public void UpdateEmployee(Employee emp)
@@ -74,7 +74,7 @@ BsonClassMap.RegisterClassMap<Employee>(cm =>
         public Employee GetEmployee(int id)
         {
             var filter = Builders<Employee>.Filter.Eq("IdEmployee", id);
-            Employee employee = (Employee)this.collection.Find(filter);
+            Employee employee = (Employee)this.collection.Find(filter).First();
             return employee;
         }
     }
