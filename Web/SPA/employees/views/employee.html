@@ -1,33 +1,55 @@
-﻿
-<table class="table" ng-controller="employeesCtrl">
-    <tr>
-        <th>
-            IdEmployee
-        </th>
-        <th>
-            Name
-        </th>
-        <th>
-            StartDate
-        </th>
-        <th></th>
-    </tr>
+﻿<div class="container clearfix">
 
-    <tr ng-repeat="employee in employees">
-        <td>
-            {{employee.IdEmployee}}
-        </td>
-        <td>
-            {{employee.Name}}
-        </td>
-        <td>
-            {{employee.StartDate}}
-        </td>
-        <td>
-            <a href="/Employees/Edit/{{employee.IdEmployee}}">Edit</a> |
-            <a href="/Employees/Details/{{employee.IdEmployee}}">Details</a> |
-            <a href="/Employees/Delete/{{employee.IdEmployee}}">Delete</a>
-        </td>
-    </tr>
+    <div class="row">
+        <div class="col-md-12 pull-right">
+            <input ng-model="query" class="form-control" placeholder="Search">
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <table class="table table-striped table-responsive">
+            <tr>
+                <th>
+                    Id
+                </th>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Start Date
+                </th>
+                <th>
+                    Salary
+                </th>
+                <th>
+                    Hourly Rate
+                </th>
+                <th></th>
+            </tr>
 
-</table>
+            <tr ng-repeat="employee in employees | filter:query">
+                <td>
+                    {{employee.IdEmployee}}
+                </td>
+                <td>
+                    {{employee.Name}}
+                </td>
+                <td>
+                    {{employee.StartDate | date:"dd/MM/yyyy h:mma"}}
+                </td>
+                <td>
+                    {{employee.Salary}}
+                </td>
+                <td>
+                    {{employee.HourlyRate}}
+                </td>
+                <td>
+                    <a href="/Employees/Edit/{{employee.IdEmployee}}">Edit</a> |
+                    <a href="/Employees/Details/{{employee.IdEmployee}}">Details</a> |
+                    <a href="/Employees/Delete/{{employee.IdEmployee}}">Delete</a>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+</div>

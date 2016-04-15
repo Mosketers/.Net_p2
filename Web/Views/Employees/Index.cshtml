@@ -4,18 +4,20 @@
     ViewBag.Title = "List";
 }
 
-<script src="~/SPA/app.js"></script>
-<script src="~/SPA/employee.module.js"></script>
-<script src="~/SPA/employees/services/employees.service.js"></script>
-<script src="~/SPA/employees/controllers/employee.controller.js"></script>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+            <h2>List</h2>
+        </div>
+        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+            <h2 class="pull-right">
+                @Html.ActionLink("Create", "Create", null, htmlAttributes: new { @class = "btn btn-primary" })
+            </h2>
+        </div>
+    </div>
+</div>
 
-<h2>List</h2>
+<div ng-app="tsi" ng-view>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-
-<div ng-app="tsi">
-    <div ng-view></div>
 </div>
 
