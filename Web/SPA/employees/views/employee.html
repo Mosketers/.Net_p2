@@ -1,0 +1,33 @@
+﻿
+<table class="table" ng-controller="employeesCtrl">
+    <tr>
+        <th>
+            IdEmployee
+        </th>
+        <th>
+            Name
+        </th>
+        <th>
+            StartDate
+        </th>
+        <th></th>
+    </tr>
+
+    <tr ng-repeat="employee in employees">
+        <td>
+            {{employee.IdEmployee}}
+        </td>
+        <td>
+            {{employee.Name}}
+        </td>
+        <td>
+            {{employee.StartDate}}
+        </td>
+        <td>
+            <a href="/Employees/Edit/{{employee.IdEmployee}}">Edit</a> |
+            <a href="/Employees/Details/{{employee.IdEmployee}}">Details</a> |
+            <a href="/Employees/Delete/{{employee.IdEmployee}}">Delete</a>
+        </td>
+    </tr>
+
+</table>

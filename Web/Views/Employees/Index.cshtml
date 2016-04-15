@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Shared.Entities.Employee>
+
+@{
+    ViewBag.Title = "List";
+}
+
+<script src="~/SPA/app.js"></script>
+<script src="~/SPA/employee.module.js"></script>
+<script src="~/SPA/employees/services/employees.service.js"></script>
+<script src="~/SPA/employees/controllers/employee.controller.js"></script>
+
+<h2>List</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<div ng-app="tsi">
+    <div ng-view></div>
+</div>
+

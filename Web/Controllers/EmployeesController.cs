@@ -20,12 +20,7 @@ namespace Web.Controllers
         {
             return View();
         }
-        // GET: Employees/List
-        public ActionResult List()
-        {
-            var dl = WebApiConfig.blHandler.GetAllEmployees();
-            return View(dl);
-        }
+
         // GET: Employees/Details
         public ActionResult Details(int id)
         {
@@ -44,7 +39,7 @@ namespace Web.Controllers
         public ActionResult ConfirmDelete(int id)
         {
             WebApiConfig.blHandler.DeleteEmployee(id);
-            return this.RedirectToAction("");
+            return this.RedirectToAction("Index");
         }
 
         // GET: Employees/Edit
@@ -85,7 +80,7 @@ namespace Web.Controllers
             emp.IdEmployee = employee.IdEmployee;
             emp.StartDate = employee.StartDate;
             WebApiConfig.blHandler.UpdateEmployee(emp);
-            return this.RedirectToAction("");
+            return this.RedirectToAction("Index");
         }
 
         // GET: Employees/Create
@@ -115,7 +110,7 @@ namespace Web.Controllers
             emp.StartDate = employee.StartDate;
 
             WebApiConfig.blHandler.AddEmployee(emp);
-            return this.RedirectToAction("");
+            return this.RedirectToAction("Index");
         }
     }
 }
