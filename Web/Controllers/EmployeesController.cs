@@ -61,14 +61,30 @@ namespace Web.Controllers
             {
                 this.ViewBag.Type = new SelectList(this.types, "Value", "Text", 1);
             }
-
-            return View(dl);
+            var emp = new EmployeeDT();
+            emp.Name = dl.Name;
+            emp.IdEmployee = dl.IdEmployee;
+            emp.StartDate = dl.StartDate;
+            return View(emp);
         }
 
         [HttpPost]
-        public ActionResult Edit(Shared.Entities.Employee employee)
+        public ActionResult Edit(EmployeeDT employee, String Type)
         {
-            WebApiConfig.blHandler.UpdateEmployee(employee);
+            Shared.Entities.Employee emp;
+            if (Type.Equals("2"))
+            {
+                emp = new Shared.Entities.PartTimeEmployee();
+            }
+            else
+            {
+                emp = new Shared.Entities.FullTimeEmployee();
+            }
+
+            emp.Name = employee.Name;
+            emp.IdEmployee = employee.IdEmployee;
+            emp.StartDate = employee.StartDate;
+            WebApiConfig.blHandler.UpdateEmployee(emp);
             return this.RedirectToAction("");
         }
 
