@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Web.Models;
 
 namespace Web.Controllers
 {
@@ -77,14 +78,14 @@ namespace Web.Controllers
         {
             this.ViewBag.Type = new SelectList(this.types, "Value", "Text", 1);
 
-            return View();
+            return View(new EmployeeDT());
         }
 
         [HttpPost]
-        public ActionResult Create(Shared.Entities.Employee employee)
+        public ActionResult Create(EmployeeDT employee , String Type)
         {
             Shared.Entities.Employee emp;
-            if (employee is Shared.Entities.PartTimeEmployee)
+            if (Type.Equals("2"))
             {
                 emp = new Shared.Entities.PartTimeEmployee();
             }
