@@ -5,7 +5,11 @@
             <input ng-model="query" class="form-control" placeholder="Search">
         </div>
     </div>
+
     <br/>
+    
+    <div class="alert alert-success" role="alert" ng-show="showAlert">Se ha agregado un nuevo empleado, por eso se refresco la grilla.</div>
+
     <div class="row">
         <table class="table table-striped table-responsive">
             <tr>

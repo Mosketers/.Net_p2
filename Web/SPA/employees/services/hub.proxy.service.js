@@ -7,7 +7,9 @@ angular.module('tsi.employee').factory('backendHubProxy', ['$rootScope',
           var connection = $.hubConnection('http://localhost:64282');
           var proxy = connection.createHubProxy(hubName);
 
-          connection.start().done(function () { });
+          connection.start().done(function () {
+              console.log('conection start')
+          });
 
           return {
               on: function (eventName, callback) {
