@@ -15,7 +15,8 @@ namespace Web.Hubs
 
         public void SendEmployee(int IdEmployee)
         {
-            Clients.All.addEmployee(IdEmployee);
+            var hubContext = GlobalHost.ConnectionManager.GetHubContext<PushEmployee>();
+            hubContext.Clients.All.addEmployee(IdEmployee);
         }
     }
 }

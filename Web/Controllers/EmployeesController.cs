@@ -119,8 +119,8 @@ namespace Web.Controllers
 
             WebApiConfig.blHandler.AddEmployee(emp);
 
-            //var hub = new Hubs.PushEmployee();
-            //hub.SendEmployee(employee.IdEmployee);
+            var hub = new Hubs.PushEmployee();
+            hub.SendEmployee(employee.IdEmployee);
 
             return this.RedirectToAction("Index");
         }
