@@ -48,15 +48,19 @@ namespace Web.Controllers
         {
             var dl = WebApiConfig.blHandler.GetEmployee(id);
 
+            var emp = new EmployeeDT();
+
             if (dl is Shared.Entities.PartTimeEmployee)
             {
                 this.ViewBag.Type = new SelectList(this.types, "Value", "Text", 2);
+                emp.HourlyRate = ((Shared.Entities.PartTimeEmployee)dl).HourlyRate;
             }
             else
             {
                 this.ViewBag.Type = new SelectList(this.types, "Value", "Text", 1);
+                emp.Salary = ((Shared.Entities.FullTimeEmployee)dl).Salary;
             }
-            var emp = new EmployeeDT();
+            
             emp.Name = dl.Name;
             emp.IdEmployee = dl.IdEmployee;
             emp.StartDate = dl.StartDate;
@@ -70,10 +74,12 @@ namespace Web.Controllers
             if (Type.Equals("2"))
             {
                 emp = new Shared.Entities.PartTimeEmployee();
+                ((Shared.Entities.PartTimeEmployee)emp).HourlyRate = employee.HourlyRate;
             }
             else
             {
                 emp = new Shared.Entities.FullTimeEmployee();
+                ((Shared.Entities.FullTimeEmployee)emp).Salary = employee.Salary;
             }
 
             emp.Name = employee.Name;
@@ -99,10 +105,12 @@ namespace Web.Controllers
             if (Type.Equals("2"))
             {
                 emp = new Shared.Entities.PartTimeEmployee();
+                ((Shared.Entities.PartTimeEmployee)emp).HourlyRate = employee.HourlyRate;
             }
             else
             {
                 emp = new Shared.Entities.FullTimeEmployee();
+                ((Shared.Entities.FullTimeEmployee)emp).Salary = employee.Salary;
             }
 
             emp.Name = employee.Name;
@@ -110,6 +118,10 @@ namespace Web.Controllers
             emp.StartDate = employee.StartDate;
 
             WebApiConfig.blHandler.AddEmployee(emp);
+
+            //var hub = new Hubs.PushEmployee();
+            //hub.SendEmployee(employee.IdEmployee);
+
             return this.RedirectToAction("Index");
         }
     }

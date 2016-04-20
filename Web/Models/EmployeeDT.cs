@@ -10,5 +10,7 @@ namespace Web.Models
         public int IdEmployee { get; set; }
         public string Name { get; set; }
         public DateTime StartDate { get; set; }
+        public int Salary { get; set; }
+        public double HourlyRate { get; set; }
     }
 }
